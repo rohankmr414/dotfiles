@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# set root pointer
+xsetroot -cursor_name left_ptr
+
+# key bindings
+sxhkd &
+
+# panel &
+polybar bottom &
+
+# compositor
+picom &
+
+# Set some bsp specific stuff
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config window_gap 10
+bspc config top_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+bspc config bottom_padding -6
+
+bspc config border_width 0
+
+bspc config split_ratio 0.52
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+bspc config pointer_modifier mod1
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+bspx config border_radius 3
+
+bspc rule -a polybar border=off manage=off
+bspc rule -a spotify state=pseudo_tiled
+bspc rule -a gparted state=pseudo_tiled
+bspc rule -a google-chrome-stable private=on
+bspc rule -a chromium private=on
+bspc rule -a firefox private=on
+bspc rule -a xterm state=floating centre=true
+
+bspc config focus_follows_pointer true

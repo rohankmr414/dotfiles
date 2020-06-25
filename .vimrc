@@ -35,7 +35,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'fatih/vim-go' " golang development 
 Plugin 'jamesroutley/vim-logbook'
 Plugin 'sheerun/vim-polyglot'   " syntax highlighting in most languages
-Plugin 'joshdick/onedark.vim'   " Atom-style dark theme
+"Plugin 'joshdick/onedark.vim'   " Atom-style dark theme
 "Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
@@ -46,7 +46,7 @@ filetype plugin indent on
 " Pretty things
 " --------------------------------
 syntax on
-colorscheme onedark
+"colorscheme onedark
 
 " Set Airline bar theme
 let g:airline_theme='bubblegum'
