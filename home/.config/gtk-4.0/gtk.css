@@ -1,0 +1,57 @@
+/* GNOME palette traffic lights. Only standard window controls are changed. */
+windowcontrols > button.close,
+windowcontrols > button.minimize,
+windowcontrols > button.maximize {
+  min-width: 28px;
+  min-height: 32px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+windowcontrols > button.close > image,
+windowcontrols > button.minimize > image,
+windowcontrols > button.maximize > image {
+  -gtk-icon-size: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0;
+  border-radius: 999px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  color: transparent;
+  -gtk-icon-shadow: none;
+}
+windowcontrols > button.close > image { background-color: transparent; background-image: url("traffic-light-assets/close.svg"); }
+windowcontrols > button.close:hover > image { color: alpha(black, 0.65); }
+windowcontrols > button.close:backdrop > image { opacity: 0.55; }
+windowcontrols > button.minimize > image { background-color: transparent; background-image: url("traffic-light-assets/minimize.svg"); }
+windowcontrols > button.minimize:hover > image { color: alpha(black, 0.65); }
+windowcontrols > button.minimize:backdrop > image { opacity: 0.55; }
+windowcontrols > button.maximize > image { background-color: transparent; background-image: url("traffic-light-assets/maximize.svg"); }
+windowcontrols > button.maximize:hover > image { color: alpha(black, 0.65); }
+windowcontrols > button.maximize:backdrop > image { opacity: 0.55; }
+
+/* Match native toolbar rhythm while separating window actions from app actions. */
+windowcontrols { border-spacing: 0; }
+windowcontrols.start { margin-left: 4px; margin-right: 8px; }
+windowcontrols.end { margin-left: 8px; margin-right: 4px; }
+
+/* Chromium synthesizes windowcontrols buttons with the titlebutton class.
+ * It adds 6px between buttons and ignores windowcontrols group margins.
+ * Native GTK4 window controls do not normally have this extra class.
+ */
+windowcontrols > button.titlebutton.close,
+windowcontrols > button.titlebutton.minimize,
+windowcontrols > button.titlebutton.maximize {
+  min-width: 22px;
+  min-height: 24px;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+windowcontrols > button.titlebutton.close { margin-left: 4px; }
+windowcontrols > button.titlebutton.maximize { margin-right: 8px; }

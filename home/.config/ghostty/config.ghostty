@@ -1,0 +1,23 @@
+# GNOME palette / Adwaita-inspired dark terminal scheme
+background = #1e1e1e
+foreground = #deddda
+cursor-color = #f6f5f4
+cursor-text = #1e1e1e
+selection-background = #3d3846
+selection-foreground = #ffffff
+palette = 0=#3d3846
+palette = 1=#ed333b
+palette = 2=#57e389
+palette = 3=#f8e45c
+palette = 4=#62a0ea
+palette = 5=#c061cb
+palette = 6=#2ec27e
+palette = 7=#deddda
+palette = 8=#77767b
+palette = 9=#f66151
+palette = 10=#8ff0a4
+palette = 11=#f9f06b
+palette = 12=#99c1f1
+palette = 13=#dc8add
+palette = 14=#33d17a
+palette = 15=#ffffff

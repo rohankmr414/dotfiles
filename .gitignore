@@ -1,0 +1,11 @@
+# Local backups and generated state
+*.backup-*
+*.before-*
+__pycache__/
+*.pyc
+.DS_Store
+.local/
+.env
+*.db
+*.db-shm
+*.db-wal
