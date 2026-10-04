@@ -1,0 +1,58 @@
+/* GNOME palette traffic lights. Only standard window controls are changed. */
+button.titlebutton.close,
+button.titlebutton.minimize,
+button.titlebutton.maximize {
+  min-width: 28px;
+  min-height: 32px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+button.titlebutton.close > image,
+button.titlebutton.minimize > image,
+button.titlebutton.maximize > image {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0;
+  border-radius: 999px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  color: transparent;
+  -gtk-icon-shadow: none;
+}
+button.titlebutton.close > image { background-color: transparent; background-image: url("traffic-light-assets/close.svg"); }
+button.titlebutton.close:hover > image { color: alpha(black, 0.65); }
+button.titlebutton.close:backdrop > image { opacity: 0.55; }
+button.titlebutton.minimize > image { background-color: transparent; background-image: url("traffic-light-assets/minimize.svg"); }
+button.titlebutton.minimize:hover > image { color: alpha(black, 0.65); }
+button.titlebutton.minimize:backdrop > image { opacity: 0.55; }
+button.titlebutton.maximize > image { background-color: transparent; background-image: url("traffic-light-assets/maximize.svg"); }
+button.titlebutton.maximize:hover > image { color: alpha(black, 0.65); }
+button.titlebutton.maximize:backdrop > image { opacity: 0.55; }
+
+/* Small edge inset and a larger gap before the first app action. */
+button.titlebutton.close { margin-left: 4px; }
+button.titlebutton.maximize { margin-right: 8px; }
+
+/* Chromium/Electron GTK3 paints the button background, not its image child. */
+windowcontrols > button.titlebutton.close,
+windowcontrols > button.titlebutton.minimize,
+windowcontrols > button.titlebutton.maximize {
+  min-width: 22px;
+  min-height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  color: transparent;
+  -gtk-icon-shadow: none;
+}
+windowcontrols > button.titlebutton.close { background-image: url("traffic-light-assets/close.svg"); }
+windowcontrols > button.titlebutton.close:hover { color: alpha(black, 0.65); }
+windowcontrols > button.titlebutton.minimize { background-image: url("traffic-light-assets/minimize.svg"); }
+windowcontrols > button.titlebutton.minimize:hover { color: alpha(black, 0.65); }
+windowcontrols > button.titlebutton.maximize { background-image: url("traffic-light-assets/maximize.svg"); }
+windowcontrols > button.titlebutton.maximize:hover { color: alpha(black, 0.65); }

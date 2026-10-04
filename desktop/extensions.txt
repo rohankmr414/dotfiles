@@ -1,0 +1,7 @@
+# Install through Extension Manager; apply-desktop enables installed extensions.
+# Dash to Dock: https://extensions.gnome.org/extension/307/dash-to-dock/
+dash-to-dock@micxgx.gmail.com
+# Vicinae: https://extensions.gnome.org/extension/8594/vicinae/
+vicinae@dagimg-dot
+# Tray icons: https://extensions.gnome.org/extension/615/appindicator-support/
+appindicatorsupport@rgcjonas.gmail.com

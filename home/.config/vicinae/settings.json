@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vicinae.com/schemas/config.json",
+  "theme": {
+    "light": {
+      "name": "adwaita-subdued",
+      "icon_theme": "auto"
+    },
+    "dark": {
+      "name": "adwaita-subdued",
+      "icon_theme": "auto"
+    }
+  },
+  "font": {
+    "normal": {
+      "family": "system"
+    }
+  },
+  "escape_key_behavior": "close_window",
+  "close_on_focus_loss": true,
+  "pop_to_root_on_close": true
+}

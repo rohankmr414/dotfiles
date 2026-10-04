@@ -1,0 +1,84 @@
+# Vicinae theme based on GNOME's LibAdwaita dark palette.
+# Colours are sourced directly from LibAdwaita CSS variables
+
+[meta]
+name = "Adwaita Subdued"
+description = "Adwaita dark surfaces with softened GNOME palette accents"
+variant = "dark"
+inherits = "vicinae-dark"
+icon = "/usr/share/vicinae/themes/icons/libadwaita.svg"
+
+# swap core.accent below to any of these to match your systems accent colour
+[colors.accents]
+blue = "#5587c3"
+green = "#4cbc75"
+magenta = "#b775b8"
+orange = "#d39f60"
+red = "#cc5448"
+yellow = "#cdbd51"
+cyan = "#30ae69"
+purple = "#a054aa"
+
+# swap to any accents value from the list above to match your systems accent colour
+[colors.core]
+accent = "colors.accents.blue"
+accent_foreground = "#222226"
+background = "#222226"
+foreground = "#ffffff"
+secondary_background = "#2e2e32"
+border = "#343439"
+
+[colors.main_window]
+border = "#3d3d43"
+footer = { background = "colors.core.secondary_background" }
+
+[colors.settings_window]
+border = "#343439"
+
+[colors.shortcut]
+border = "colors.core.border"
+
+[colors.text]
+default = "colors.core.foreground"
+muted = "#c0bfbc"
+danger = "#f66151"
+success = "#8ff0a4"
+placeholder = "#77767b"
+selection = { background = "#406fa4", foreground = "#ffffff" }
+
+[colors.text.links]
+default = "#99c1f1"
+visited = "#dc8add"
+
+[colors.input]
+border = "#343439"
+border_focus = "colors.core.accent"
+border_error = "#f66151"
+
+[colors.button.primary]
+background = "#2e2e32"
+foreground = "#ffffff"
+hover = { background = "#bb2e2e32" }
+focus = { outline = "colors.core.accent" }
+
+[colors.list.item.hover]
+foreground = "#ffffff"
+secondary_foreground = "#c0bfbc"
+
+[colors.list.item.selection]
+background = "#4a4a4f"
+foreground = "#ffffff"
+secondary_background = "colors.core.accent"
+secondary_foreground = "#ffffff"
+
+[colors.grid.item]
+background = "#424248"
+hover = { outline = "colors.core.accent" }
+selection = { outline = "colors.core.accent" }
+
+[colors.scrollbars]
+background = "#48484c"
+
+[colors.loading]
+bar = "colors.core.accent"
+spinner = "#ffffff"
