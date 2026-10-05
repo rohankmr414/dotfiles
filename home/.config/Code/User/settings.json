@@ -62,5 +62,5 @@
     "terminal.ansiBrightCyan": "#33d17a",
     "terminal.ansiBrightWhite": "#ffffff"
   },
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "custom"
 }
