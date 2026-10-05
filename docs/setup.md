@@ -42,6 +42,23 @@ it does not vendor extension code or automatically download it.
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Vicinae](https://extensions.gnome.org/extension/8594/vicinae/)
 - [AppIndicator support](https://extensions.gnome.org/extension/615/appindicator-support/)
+- [Speedinator](https://extensions.gnome.org/extension/6397/speedinator/)
+- [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+
+## WhiteSur alternative icons
+
+Install the alternative icon set before applying desktop settings:
+
+```sh
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git ~/Downloads/WhiteSur-icon-theme
+cd ~/Downloads/WhiteSur-icon-theme
+./install.sh --alternative
+cd -
+```
+
+GNOME and both Vicinae appearance modes explicitly select `WhiteSur`. Restart
+Vicinae after installation. Vicinae built-in command icons use its own artwork.
+The icon artwork is installed separately rather than vendored in this repository.
 
 ## Apply the configuration
 
@@ -79,6 +96,19 @@ install those extensions and rerun to apply their preferences.
 - Super+Shift+number dock shortcuts are disabled; Super+number remains available.
 - AppIndicator provides top-bar tray icons. Enable the tray option inside Vesktop if needed.
 - Sushi previews selected files with Space in Files.
+
+## Animation and blur preferences
+
+The October 5 snapshot records Speedinator duration multiplier `1.3` and its
+app-grid grace period. Blur My Shell v72 uses blur radius `30`, brightness `0.6`,
+static wallpaper blur for the panel, and dynamic blur for Dash to Dock. Other
+component settings and pipelines are recorded as currently configured. Application
+window blur is disabled. User Themes stays disabled; the rejected charcoal panel
+theme is not included.
+
+Install the compatible extension versions, then log out and back in before
+applying desktop preferences. Later extension releases may change schema keys or
+pipeline formats; review the snapshot before upgrading/reapplying it.
 
 ## Application-specific notes
 
