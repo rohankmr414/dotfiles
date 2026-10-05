@@ -5,3 +5,8 @@ dash-to-dock@micxgx.gmail.com
 vicinae@dagimg-dot
 # Tray icons: https://extensions.gnome.org/extension/615/appindicator-support/
 appindicatorsupport@rgcjonas.gmail.com
+
+# Animation timing: https://extensions.gnome.org/extension/6397/speedinator/
+speedinator@liam.moe
+# Blur: https://extensions.gnome.org/extension/3193/blur-my-shell/
+blur-my-shell@aunetx

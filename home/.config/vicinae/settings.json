@@ -3,11 +3,11 @@
   "theme": {
     "light": {
       "name": "adwaita-subdued",
-      "icon_theme": "auto"
+      "icon_theme": "WhiteSur"
     },
     "dark": {
       "name": "adwaita-subdued",
-      "icon_theme": "auto"
+      "icon_theme": "WhiteSur"
     }
   },
   "font": {
