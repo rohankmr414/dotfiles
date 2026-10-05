@@ -82,8 +82,8 @@ install those extensions and rerun to apply their preferences.
 
 ## Application-specific notes
 
-VS Code uses Dark 2026 syntax highlighting with GNOME charcoal interface colors,
-muted blue accents, and the same terminal palette as Ghostty. The managed settings
+VS Code uses Dark 2026 syntax highlighting with Adwaita warm gray interface colors,
+GNOME blue accents, and the same terminal palette as Ghostty. The managed settings
 file is copied on installation; existing settings are backed up, then replaced.
 `window.titleBarStyle` is set to `custom` to use VS Code's integrated title bar.
 Fully quit and restart VS Code after changing this setting.
