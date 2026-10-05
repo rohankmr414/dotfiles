@@ -45,7 +45,7 @@ it does not vendor extension code or automatically download it.
 
 ## Apply the configuration
 
-Quit Vicinae and Vesktop first so they cannot overwrite newly installed preferences.
+Quit VS Code, Vicinae and Vesktop first so they cannot overwrite newly installed preferences.
 For Vicinae's service: `systemctl --user stop vicinae.service`.
 
 ```sh
@@ -56,8 +56,8 @@ python3 scripts/apply-desktop.py
 ```
 
 `link-configs.py` backs up existing managed files and links individual files, never
-whole app directories. Vicinae's `settings.json` is copied because Vicinae writes
-that file through its GUI. Rerunning the installer reapplies the repository version.
+whole app directories. VS Code and Vicinae `settings.json` files are copied because
+the apps write those files through their GUIs. Rerunning the installer reapplies the repository version.
 After making wanted GUI changes, copy only that reviewed configuration back into the repo.
 Vicinae's theme has one source file, linked into both config and data theme directories.
 
@@ -81,6 +81,12 @@ install those extensions and rerun to apply their preferences.
 - Sushi previews selected files with Space in Files.
 
 ## Application-specific notes
+
+VS Code uses Dark 2026 syntax highlighting with GNOME charcoal interface colors,
+muted blue accents, and the same terminal palette as Ghostty. The managed settings
+file is copied on installation; existing settings are backed up, then replaced.
+Review and merge any personal editor preferences before reapplying it.
+
 
 For Brave, choose GTK in Appearance. Fully quit it before testing:
 

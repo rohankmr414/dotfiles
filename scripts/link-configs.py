@@ -33,7 +33,7 @@ def main():
             shutil.move(str(target), str(saved))
         target.parent.mkdir(parents=True, exist_ok=True)
         if copy:
-            # Vicinae rewrites this file through its GUI; don't let it edit the repo.
+            # Apps rewrite settings through their GUIs; keep the repository separate.
             shutil.copy2(source, target)
         else:
             target.symlink_to(source)
